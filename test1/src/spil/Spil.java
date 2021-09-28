@@ -35,6 +35,11 @@ public class Spil {
             System.out.println("Player 1's point er: " + player1.getPoint());
             System.out.println("-----------------------------------------");
 
+            if (player1.getPoint()>40 || player2.getPoint()>40){
+                System.out.println("Vinderen er fundet");
+                break;
+            }
+            
             terning3 = (int) (Math.random() * 6) + 1;
             terning4 = (int) (Math.random() * 6) + 1;
             gui.setDice(terning3, terning4);
@@ -46,6 +51,11 @@ public class Spil {
             System.out.println("Player 2: summen for runden er: " + terning.getSum());
             System.out.println("Player 2's point er: " + player2.getPoint());
             System.out.println("-----------------------------------------");
+
+            if (player1.getPoint()>40 || player2.getPoint()>40){
+                System.out.println("Vinderen er fundet");
+                break;
+            }
         }
 
 
