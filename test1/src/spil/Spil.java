@@ -7,6 +7,7 @@ public class Spil {
     public static void main(String[] args) {
         GUI gui = new GUI();
         Terning terning = new Terning();
+        Terning tern = new Terning();
 
         Player player1 = new Player();
         Player player2 = new Player();
@@ -38,12 +39,12 @@ public class Spil {
             terning4 = (int) (Math.random() * 6) + 1;
             gui.setDice(terning3, terning4);
 
-            terning.setSum(terning3+terning4);
-            player2.setPoint(player1.getPoint()+terning.getSum());
+            tern.setSum(terning3+terning4);
+            player2.setPoint(player2.getPoint()+tern.getSum());
 
             System.out.println("Player 2: terning 1 er: " + terning3 + " og terning 2 er: "+ terning4);
             System.out.println("Player 2: summen for runden er: " + terning.getSum());
-            System.out.println("Player 2's point er: " + player1.getPoint());
+            System.out.println("Player 2's point er: " + player2.getPoint());
             System.out.println("-----------------------------------------");
         }
 
