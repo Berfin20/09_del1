@@ -8,9 +8,13 @@ import java.util.Scanner;
         Terning terning2 = new Terning();
         Player player1 = new Player();
         Player player2 = new Player();
-
         //Sum variabel
         int sum;
+
+        public static void main(String[] args) {
+            Spil spil = new Spil();
+            spil.welcome();
+        }
 
         void runApp() {
             //Sæt player 1 og player 2's point til nul
@@ -85,9 +89,4 @@ import java.util.Scanner;
                 runApp();
             }
         }
-
-        public static void main(String[] args) {
-            Spil spil = new Spil();
-            spil.welcome();
-           }
-        }
+    }
