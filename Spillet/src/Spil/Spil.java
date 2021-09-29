@@ -1,22 +1,20 @@
 package Spil;
-
 import java.util.Scanner;
 
     public class Spil {
-        //Oprettelse af objekter
-        Terning terning1 = new Terning();
-        Terning terning2 = new Terning();
-        Player player1 = new Player();
-        Player player2 = new Player();
-        //Sum variabel
-        int sum;
-
         public static void main(String[] args) {
             Spil spil = new Spil();
             spil.welcome();
         }
 
         void runApp() {
+            //Oprettelse af objekter
+            Terning terning1 = new Terning();
+            Terning terning2 = new Terning();
+            Player player1 = new Player();
+            Player player2 = new Player();
+            //Sum variabel
+            int sum;
             //Sæt player 1 og player 2's point til nul
             player1.setPoint(0);
             player2.setPoint(0);
@@ -81,7 +79,7 @@ import java.util.Scanner;
             }
         }
 
-        void welcome(){
+        void welcome() {
             System.out.println("Velkommen til terninge-spillet. For at starte spillet: tast 's' :)");
             Scanner scanner = new Scanner(System.in);
             String tast = scanner.next();
