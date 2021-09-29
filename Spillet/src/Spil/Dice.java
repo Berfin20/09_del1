@@ -1,6 +1,6 @@
 package Spil;
 
-public class Terning {
+public class Dice {
     private int faceValue = 0;
 
     public int getFaceValue() {

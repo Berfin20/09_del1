@@ -1,6 +1,6 @@
 package Spil;
 
-public class Player {
+public class Spiller {
     private int point;
 
     public void setPoint(int point) {
