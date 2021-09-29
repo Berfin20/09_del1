@@ -1,4 +1,4 @@
-package spil;
+package Spil;
 
 public class Terning {
     private int sum;
