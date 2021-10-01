@@ -2,7 +2,6 @@ package Test;
 
 public class SpilTest {
     public static void main(String[] args) {
-        int dice1;
         int counter = 0;
         int enere = 0;
         int toere = 0;
@@ -12,7 +11,7 @@ public class SpilTest {
         int seksere = 0;
 
         while(counter<1000){
-            dice1 = (int) (Math.random() * 6) + 1;
+            int dice1 = (int) (Math.random() * 6) + 1;
             switch (dice1) {
                 case 1 -> enere++;
                 case 2 -> toere++;
@@ -23,6 +22,9 @@ public class SpilTest {
             }
             counter++;
             System.out.println("enere: " + enere + ", toere: " + toere + ", treere: " + treere + ", firere: " + firere + ", femere: " + femere + ", seksere: " + seksere);
+            int sum = dice1+dice1;
+            System.out.println("Terningen har slået: " + dice1);
+            System.out.println("sum for runde "+ counter + " er: " + sum);
 
         }
     }
